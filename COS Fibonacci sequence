@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+
+public class FibonacciSequence {
+    void main(String[] args) {
+        int numberCount = 100;
+        BigInteger first = BigInteger.ZERO;
+        BigInteger second = BigInteger.ONE;
+
+        for(int i = 0; i <= 100; i++){
+            System.out.println(first);
+            BigInteger next = first.add(second);
+            first = second;
+            second = next;
+        }
+    }
+}
